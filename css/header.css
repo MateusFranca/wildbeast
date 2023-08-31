@@ -1,0 +1,36 @@
+.header {
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.logo {
+  max-width: 200px; /*Limitar o tamanho do espaço de click da logo no header*/
+}
+
+.header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header nav a {
+  display: block; /*Para que o padding não ultrapasse o espaço limitado*/
+  padding: 10px; /*Criar uma área maior de contato no mobile*/
+  color: #fff;
+  font-size: 1.25rem;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition: .1s;
+}
+
+.header nav a:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/*Esta pegando o li que vem após o li*/
+
+.header li + li {
+  margin-left: 30px;
+}
